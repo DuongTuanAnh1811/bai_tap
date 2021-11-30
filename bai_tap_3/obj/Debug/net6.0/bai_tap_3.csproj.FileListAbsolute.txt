@@ -1,0 +1,15 @@
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\bin\Debug\net6.0\bai_tap_3.exe
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\bin\Debug\net6.0\bai_tap_3.deps.json
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\bin\Debug\net6.0\bai_tap_3.runtimeconfig.json
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\bin\Debug\net6.0\bai_tap_3.dll
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\bin\Debug\net6.0\ref\bai_tap_3.dll
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\bin\Debug\net6.0\bai_tap_3.pdb
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\bai_tap_3.csproj.AssemblyReference.cache
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\bai_tap_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\bai_tap_3.AssemblyInfoInputs.cache
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\bai_tap_3.AssemblyInfo.cs
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\bai_tap_3.csproj.CoreCompileInputs.cache
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\bai_tap_3.dll
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\ref\bai_tap_3.dll
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\bai_tap_3.pdb
+D:\hocthem\bai_tap_c_sharp\bai_tap_c_sharp\bai_tap_3\obj\Debug\net6.0\bai_tap_3.genruntimeconfig.cache

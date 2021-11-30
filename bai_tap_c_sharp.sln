@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bai_tap_1", "bai_tap_1\bai_tap_1.csproj", "{459C2A52-B3BE-4414-B45C-2F844E206FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bai_tap_2", "bai_tap_2\bai_tap_2.csproj", "{BB72CCBB-22CD-430B-9631-82FC55C3425C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bai_tap_3", "bai_tap_3\bai_tap_3.csproj", "{C071C6A9-FB02-444B-BF0F-A74D3F4E88CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{459C2A52-B3BE-4414-B45C-2F844E206FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459C2A52-B3BE-4414-B45C-2F844E206FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459C2A52-B3BE-4414-B45C-2F844E206FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459C2A52-B3BE-4414-B45C-2F844E206FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB72CCBB-22CD-430B-9631-82FC55C3425C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB72CCBB-22CD-430B-9631-82FC55C3425C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB72CCBB-22CD-430B-9631-82FC55C3425C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB72CCBB-22CD-430B-9631-82FC55C3425C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C071C6A9-FB02-444B-BF0F-A74D3F4E88CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C071C6A9-FB02-444B-BF0F-A74D3F4E88CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C071C6A9-FB02-444B-BF0F-A74D3F4E88CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C071C6A9-FB02-444B-BF0F-A74D3F4E88CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A6529AA-836E-41D0-8C95-687DFC169FD8}
+	EndGlobalSection
+EndGlobal
