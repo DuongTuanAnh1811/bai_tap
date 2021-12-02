@@ -25,33 +25,15 @@ namespace bai_tap_1
             this.Taxcoe = Taxcoe;
         }
 
-        public List<Person> PersonList { get; set; }
-        public static Person Check;
-        public Person()
+        public bool Equals(Person p)
         {
-            this.PersonList = new List<Person>();
-        }
-        public static Person CheckObject()
-        {
-            if (Person.Check == null)
+            if (this == p)
             {
-                return Person.Check = new Person();
-
+                return true;
             }
-            return Person.Check;
+            return false;
         }
-        //public bool Equals(Person p)
-        //{
-        //    if (this== p)
-        //    {
-        //        return true;
-        //    }
-        //    return false;
-        //}
-        public void GetInfo()
-        {
-            Console.WriteLine("id:{0}  name:{1}  tax= {2} ", Id, Name,GetTax());
-        }
+       
         public double GetTax()
         {
             return Income * Taxcoe / 100;
