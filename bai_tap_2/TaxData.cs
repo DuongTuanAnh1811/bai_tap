@@ -8,30 +8,30 @@ namespace bai_tap_2
 {
      class TaxData
     {
-        public double _taxcoe { get; set; }
+        
         public double GetTaxCoe(Person person)
         {
-            if (person._age < 18)
+            if (person.Age < 18)
             {
-                return _taxcoe = 0;
+                return person.Taxcoe = 0;
             }
-            else if (person._age > 18)
+            else if (person.Age > 18)
             {
-                if (person._income <= 9000000)
+                if (person.Income <= 9000000)
                 {
-                    return _taxcoe = 5;
+                    return person.Taxcoe = 5;
                 }
-                else if (9000000 < person._income && person._income <= 15000000)
+                else if (9000000 < person.Income && person.Income <= 15000000)
                 {
-                    return _taxcoe = 10;
+                    return person.Taxcoe = 10;
                 }
-                else if (15000000 < person._income && person._income <= 20000000)
+                else if (15000000 < person.Income && person.Income <= 20000000)
                 {
-                    return _taxcoe = 15;
+                    return person.Taxcoe = 15;
                 }
                 else
                 {
-                    return _taxcoe = 20;
+                    return person.Taxcoe = 20;
                 }
             }
             return 0;

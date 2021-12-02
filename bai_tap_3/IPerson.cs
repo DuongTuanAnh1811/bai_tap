@@ -8,10 +8,12 @@ namespace bai_tap_3
 {
    public interface IPerson
     {
-        int _id { get; set; }
-        string _name { get; set; }
-        double _age { get; set; }
-        double _income { get; set; }
+        int Id { get; set; }
+        string Name { get; set; }
+        double Age { get; set; }
+        double Income { get; set; }
+        double Taxcoe { get; set; }
+
         void GetInfo();
         bool Equals(IPerson p);
         double GetTax();

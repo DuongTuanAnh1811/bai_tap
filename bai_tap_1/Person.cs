@@ -9,24 +9,25 @@ namespace bai_tap_1
 {
      class Person
     {
-        public int _id { get; set; }
-        public string _name { get; set; }
-        public double _age { get; set; }
-        public double _income { get; set; }
-        public double _taxcoe { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public double Age { get; set; }
+        public double Income { get; set; }
+        public double Taxcoe { get; set; }
 
         public Person()
         {
 
         }
-        public Person(int id, string name, double age, double income, double taxcoe)
+        public Person(int Id, string Name, double Age, double Income, double Taxcoe)
         {
-            this._id = id;
-            this._name = name;
-            this._age = age;
-            this._income = income;
-            this._taxcoe = taxcoe;
+            this.Id = Id;
+            this.Name = Name;
+            this.Age = Age;
+            this.Income = Income;
+            this.Taxcoe = Taxcoe;
         }
+
         public bool Equals(Person p)
         {
             if (this== p)
@@ -37,7 +38,7 @@ namespace bai_tap_1
         }
         public double GetTax()
         {
-            return _income * _taxcoe / 100;
+            return Income * Taxcoe / 100;
         }
 
     }

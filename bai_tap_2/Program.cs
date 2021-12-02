@@ -24,7 +24,7 @@ namespace bai_tap_2
             foreach (Person person in Personlist)
             {
                 
-                Console.WriteLine("id:{0}  name:{1}  tax= {2}   ", person._id, person._name, person.GetTax());
+                Console.WriteLine("id:{0}  name:{1}  tax= {2}   ", person.Id, person.Name, person.GetTax());
             }
         }
 

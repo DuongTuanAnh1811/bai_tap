@@ -9,27 +9,27 @@ namespace bai_tap_3
     public class Teacher:IPerson
     {
 
-        public int _id { get; set; }
-        public string _name { get; set; }
-        public double _age { get; set; }
-        public double _income { get; set; }
-        public string _school { get; set; }
-        TaxData taxData= new TaxData();
-        public Teacher()
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public double Age { get; set; }
+        public double Income { get; set; }
+        public double Taxcoe { get; set; }
+        public string School { get; set; }
+        TaxData taxdata= new TaxData();
+     
+        public Teacher(int Id, string Name, double Age,  string School, double Income)
         {
-
-        }
-        public Teacher(int id, string name, double age,  string school)
-        {
-            this._id = id;
-            this._name = name;
-            this._age = age;
-            this._school = school;
+            this.Id = Id;
+            this.Name = Name;
+            this.Age = Age;
+            this.School = School;
+            this.Income = Income;
+            this.Taxcoe = taxdata.GetTaxCoe(this);
 
         }
         public void GetInfo()
         {
-            Console.WriteLine("id:{0}  name:{1}  age= {2} income{3}  school{4} ", _id, _name, _age,_income ,_school);
+            Console.WriteLine("id:{0}  name:{1}  age= {2}  school{3}  income{4}  tax{5}", Id, Name, Age,School ,Income,Taxcoe);
         }
         public bool Equals(IPerson p)
         {
@@ -41,7 +41,7 @@ namespace bai_tap_3
         }
         public double GetTax()
         {
-            return _income*taxData.GetTaxCoe(this)/100;
+            return Income*taxdata.GetTaxCoe(this)/100;
         }
     }
 }
