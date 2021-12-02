@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace bai_tap_3
 {
-    class Student : IPerson
+   public class Student : IPerson
     {
        public int Id { get; set; }
         public string Name { get; set; }
@@ -26,7 +26,7 @@ namespace bai_tap_3
         }
         public void GetInfo()
         {
-            Console.WriteLine("id:{0}  name:{1}  age= {2}  class{3}  school{4} ", Id,Name,Age,Class,School);
+            Console.WriteLine("id: {0}  name: {1}  age= {2}  class: {3}  school: {4} ", Id,Name,Age,Class,School);
         }
     
         public bool Equals(IPerson p)

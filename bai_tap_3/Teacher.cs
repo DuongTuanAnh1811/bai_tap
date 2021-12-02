@@ -29,7 +29,7 @@ namespace bai_tap_3
         }
         public void GetInfo()
         {
-            Console.WriteLine("id:{0}  name:{1}  age= {2}  school{3}  income{4}  tax{5}", Id, Name, Age,School ,Income,Taxcoe);
+            Console.WriteLine("id: {0}  name: {1}  age= {2}  school: {3}  income: {4}  tax: {5}", Id, Name, Age,School ,Income,GetTax());
         }
         public bool Equals(IPerson p)
         {

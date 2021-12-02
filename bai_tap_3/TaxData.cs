@@ -8,9 +8,24 @@ namespace bai_tap_3
 {
     public class TaxData
 
-    { 
- 
-    public double GetTaxCoe(IPerson person)
+    {
+        public  List<IPerson> person { get; set; }
+
+        public static TaxData Check ;
+        public TaxData()
+        {
+            this.person = new List<IPerson>();
+        }
+        public static TaxData CheckObject() 
+        {
+            if (TaxData.Check == null)
+            {
+                return TaxData.Check = new TaxData();
+            }
+            return TaxData.Check;
+        }
+
+        public double GetTaxCoe(IPerson person)
     {
         if (person.Age < 18)
         {

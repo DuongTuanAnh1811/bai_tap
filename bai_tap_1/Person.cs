@@ -15,10 +15,7 @@ namespace bai_tap_1
         public double Income { get; set; }
         public double Taxcoe { get; set; }
 
-        public Person()
-        {
-
-        }
+       
         public Person(int Id, string Name, double Age, double Income, double Taxcoe)
         {
             this.Id = Id;
@@ -28,13 +25,32 @@ namespace bai_tap_1
             this.Taxcoe = Taxcoe;
         }
 
-        public bool Equals(Person p)
+        public List<Person> PersonList { get; set; }
+        public static Person Check;
+        public Person()
         {
-            if (this== p)
+            this.PersonList = new List<Person>();
+        }
+        public static Person CheckObject()
+        {
+            if (Person.Check == null)
             {
-                return true;
+                return Person.Check = new Person();
+
             }
-            return false;
+            return Person.Check;
+        }
+        //public bool Equals(Person p)
+        //{
+        //    if (this== p)
+        //    {
+        //        return true;
+        //    }
+        //    return false;
+        //}
+        public void GetInfo()
+        {
+            Console.WriteLine("id:{0}  name:{1}  tax= {2} ", Id, Name,GetTax());
         }
         public double GetTax()
         {

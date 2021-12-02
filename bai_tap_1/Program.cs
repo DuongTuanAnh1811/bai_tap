@@ -9,28 +9,18 @@ namespace bai_tap_1
     class Program
     {
 
-        static List<Person> Personlist = new List<Person>();
-
-        public static void Init()
-            {
-          
-            Personlist.Add(new Person(1, "Duong Tuan Anh ", 20, 10000000, 10));
-            Personlist.Add(new Person(2, "Nguyen Tuan Anh ", 20, 10000000, 20));
-            Personlist.Add(new Person(3, "Tran Duc Anh ", 20, 30000000, 30));
-            Personlist.Add(new Person(4, "Nguye Van Tuan", 20, 20000000, 40));
-            Personlist.Add(new Person(5, "Lai Thi Thuong ", 20, 10000000, 10));
-            }
             public static void OutPut()
             {
-            foreach (Person person in Personlist)
+            Console.WriteLine("Person {0}", Person.CheckObject().PersonList.Count<Person>());
+            foreach (Person person in Person.CheckObject().PersonList)
             {
-                Console.WriteLine("id:{0}  name:{1}  tax= {2} ",person.Id,person.Name,person.GetTax());
+                person.GetInfo();
             }
             }
         
         static void Main(string[] args)
         {
-            Init();
+            Application.Init();
             OutPut();
             Console.ReadKey();
         }

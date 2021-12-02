@@ -7,23 +7,31 @@ using System.Threading.Tasks;
 namespace bai_tap_3
 {
     class Program
-    {
-        
+    { 
 
-        static int countstudent=0;
-        public static void Init()
-        {
-           
-        }
-            public static void OutPut()
+        public static void OutPut()
             {
-           
+            Console.WriteLine("Student {0}", TaxData.CheckObject().person.OfType<Student>().Count<Student>());
+            foreach(Student student in TaxData.CheckObject().person.OfType<Student>())
+            {
+                student.GetInfo();
             }
+            Console.WriteLine("Teacher {0}", TaxData.CheckObject().person.OfType<Teacher>().Count<Teacher>());
+            foreach (Teacher teacher in TaxData.CheckObject().person.OfType<Teacher>())
+            {
+                teacher.GetInfo();
+            }
+            Console.WriteLine("Employee {0}", TaxData.CheckObject().person.OfType<Employee>().Count<Employee>());
+            foreach (Employee employee in TaxData.CheckObject().person.OfType<Employee>())
+            {
+                employee.GetInfo();
+            }
+        }
         
         static void Main(string[] args)
         {
 
-            Init();
+            Application.Init();
             OutPut();
             Console.ReadKey();
         }

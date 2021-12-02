@@ -30,7 +30,7 @@ namespace bai_tap_3
         }
         public void GetInfo()
         {
-            Console.WriteLine("id:{0}  name:{1}  age= {2}  company{3}  jobtitle{4}  income{5}   tax{6}", Id, Name, Age, Company, Jobtitle ,Income, Taxcoe);
+            Console.WriteLine("id: {0}  name: {1}  age= {2}  company: {3}  jobtitle: {4}  income: {5}   tax: {6}", Id, Name, Age, Company, Jobtitle ,Income, GetTax());
         }
         public bool Equals(IPerson p)
         {

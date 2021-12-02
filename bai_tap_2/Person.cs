@@ -15,10 +15,7 @@ namespace bai_tap_2
         public double Income { get; set; }
         public double Taxcoe { get; set; }
         TaxData taxdata= new TaxData();
-        public Person()
-        {
 
-        }
         public Person(int Id, string Name, double Age, double Income)
         {
             this.Id = Id;
@@ -27,6 +24,22 @@ namespace bai_tap_2
             this.Income = Income;
             this.Taxcoe = taxdata.GetTaxCoe(this);
         }
+
+        public List<Person> PersonList { get; set; }
+        public static Person Check;
+        public Person()
+        {
+            this.PersonList = new List<Person>();
+        }
+        public static Person CheckObject()
+        {
+            if (Person.Check == null)
+            {
+                return Person.Check = new Person();
+
+            }
+            return Person.Check;
+        }
         public bool Equals(Person p)
         {
             if (this == p)
@@ -34,6 +47,11 @@ namespace bai_tap_2
                 return true;
             }
             return false;
+        }
+        public void GetInfo()
+        {
+
+            Console.WriteLine("id:{0}  name:{1}  tax= {2}   ", Id, Name, GetTax());
         }
         public double GetTax()
         {

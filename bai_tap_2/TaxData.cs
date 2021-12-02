@@ -8,7 +8,7 @@ namespace bai_tap_2
 {
      class TaxData
     {
-        
+       
         public double GetTaxCoe(Person person)
         {
             if (person.Age < 18)
